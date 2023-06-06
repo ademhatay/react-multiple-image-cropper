@@ -10,8 +10,8 @@ Bu uygulama, kullanıcıların resimleri kırpabilmesine ve kırpılan resimleri
 
 ## Kurulum
 
-1. Bu depoyu yerel bir klasöre klonlayın: `git clone https://github.com/KULLANICI_ADI/proje-adı.git`
-2. Proje klasörüne gidin: `cd proje-adı`
+1. Bu depoyu yerel bir klasöre klonlayın: `https://github.com/ademhatay/react-multiple-image-cropper.git`
+2. Proje klasörüne gidin: `cd react-multiple-image-cropper`
 3. Gerekli bağımlılıkları yükleyin: `npm install`
 4. Uygulamayı başlatın: `npm start`
 
