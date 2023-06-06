@@ -1,0 +1,46 @@
+.App {
+	text-align: center;
+	padding: 20px;
+}
+
+.Crop-Controls {
+	margin-bottom: 20px;
+}
+
+.Crop-Container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.Crop-Item {
+	margin: 10px;
+}
+
+.Crop-Image {
+	max-height: 400px;
+	margin-bottom: 20px;
+}
+
+.Crop-Result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.Crop-Canvas {
+	border: 1px solid black;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.Crop-Buttons {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	margin: 5px;
+}
