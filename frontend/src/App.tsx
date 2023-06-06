@@ -5,6 +5,7 @@ import JSZip from 'jszip';
 
 import 'react-image-crop/dist/ReactCrop.css';
 
+
 export default function App() {
 	const [imgSrc, setImgSrc] = useState<string[]>([]);
 	const previewCanvasRefs = useRef<any[]>([]);
@@ -112,7 +113,7 @@ export default function App() {
 
 	function exportAllCrops() {
 		if (imgSrc.length === 0) {
-			alert('Lütfen önce resim seçin.');
+			alert('Please select an image first.');
 			return;
 		}
 		const zip = new JSZip();
@@ -120,7 +121,7 @@ export default function App() {
 			return new Promise<void>((resolve) => {
 				const canvas = previewCanvasRefs.current[index];
 				console.log(src);
-				
+
 				canvas.toBlob((blob: any) => {
 					zip.file(`crop_${index + 1}.png`, blob);
 					resolve();
@@ -155,8 +156,10 @@ export default function App() {
 		<div className="App">
 			<div className="Crop-Controls">
 				<input id="file-input" type="file" multiple accept="image/*" onChange={onSelectFiles} />
-				<button onClick={exportAllCrops}>Hepsini İndir</button>
-				<button onClick={resetState}>Reset</button>
+				<div className="Crop-Buttons">
+					<button onClick={exportAllCrops}>Download All</button>
+					<button onClick={resetState}>Reset</button>
+				</div>
 			</div>
 			{imgSrc && Array.isArray(imgSrc) && imgSrc.length > 0 && (
 				<div className="Crop-Container">
@@ -194,7 +197,6 @@ export default function App() {
 									<canvas
 										ref={(canvasRef) => (previewCanvasRefs.current[index] = canvasRef)}
 										className="Crop-Canvas"
-										
 									/>
 									<div className="Crop-Buttons">
 										<button onClick={() => onDownloadCropClick(index)}>Download Crop</button>

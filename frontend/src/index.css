@@ -1,46 +1,57 @@
+
+
+
 .App {
 	text-align: center;
-	padding: 20px;
+	margin-top: 2rem;
 }
 
 .Crop-Controls {
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 }
 
 .Crop-Container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1rem;
 }
 
 .Crop-Item {
-	margin: 10px;
-}
-
-.Crop-Image {
-	max-height: 400px;
-	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 1rem;
 }
 
 .Crop-Result {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.Crop-Canvas {
-	border: 1px solid black;
-	object-fit: contain;
-	width: 100%;
-	height: auto;
-	margin-bottom: 10px;
+	margin-top: 1rem;
 }
 
 .Crop-Buttons {
-	display: flex;
-	justify-content: center;
+	margin-top: 1rem;
 }
 
-button {
-	margin: 5px;
+.Crop-Buttons button {
+	margin-right: 0.5rem;
+	padding: 0.5rem 1rem;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.Crop-Buttons button:hover {
+	background-color: #0056b3;
+}
+
+.Crop-Img {
+	max-width: 100%;
+	height: auto;
+}
+
+.Crop-Canvas {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
