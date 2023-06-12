@@ -26,7 +26,7 @@ Bu uygulama, kullanıcıların resimleri kırpabilmesine ve kırpılan resimleri
 
 ## Katkılar
 
-Katkılarınızı memnuniyetle karşılıyoruz! Herhangi bir hata bildirimi, öneri veya katkıda bulunmak için lütfen GitHub üzerinden bir Issue veya Pull Request oluşturun.
+Katkılarınızı memnuniyetle karşılıyoruz! Herhangi bir hata bildirimi, öneri veya katkıda bulunmak için lütfen GitHub üzerinden bir Issue veya Pull Request oluşturun
 
 ## Lisans
 
