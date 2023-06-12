@@ -2,6 +2,9 @@
 
 Bu uygulama, kullanıcıların resimleri kırpabilmesine ve kırpılan resimleri indirebilmesine olanak sağlar. React kütüphanesi ve diğer bazı paketler kullanılarak geliştirilmiştir.
 
+![Adsız](https://github.com/ademhatay/react-multiple-image-cropper/assets/66277966/69bd8a2b-271c-4b7e-83a5-1d66f285a479)
+
+
 ## Özellikler
 
 - Birden fazla resmi yükleyebilme ve kırpabilme
